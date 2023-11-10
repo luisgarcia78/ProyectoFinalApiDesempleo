@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.login-container {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.loginbg {
+    background-repeat: no-repeat;
+    background-image: url('/assets/Fondologin.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-white {
+    /* Ajusta el ancho de la tarjeta según tus necesidades */
+    width: 30rem; /* Ejemplo: ancho de 30rem */
+    margin: 0 auto;
+    margin-top: 3rem; /* Centrar la tarjeta horizontalmente */
+}
+
+.loginbg::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.335);
+    z-index: -2;
+}
