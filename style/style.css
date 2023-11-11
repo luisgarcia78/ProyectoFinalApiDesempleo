@@ -17,6 +17,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+  
 }
 
 .bg-white {
@@ -33,6 +34,20 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.335);
+    background-color: rgba(0, 0, 0, 0.443);
     z-index: -2;
+}
+
+select{
+    background-color: #0396a4;
+    color: white;
+    width: 120px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+ align-items: center;
+ margin-left: 10px;
 }
