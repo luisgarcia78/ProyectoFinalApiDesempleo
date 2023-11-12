@@ -5,6 +5,7 @@ body {
 .login-container {
     margin-top: 3rem;
     position: relative;
+    
 }
 
 .loginbg {
@@ -24,7 +25,8 @@ body {
     /* Ajusta el ancho de la tarjeta según tus necesidades */
     width: 30rem; /* Ejemplo: ancho de 30rem */
     margin: 0 auto;
-    margin-top: 3rem; /* Centrar la tarjeta horizontalmente */
+    margin-top: 3rem;
+     /* Centrar la tarjeta horizontalmente */
 }
 
 .loginbg::after {
@@ -37,17 +39,49 @@ body {
     background-color: rgba(0, 0, 0, 0.443);
     z-index: -2;
 }
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#000000;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-color: #23b499;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 10em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
 
-select{
-    background-color: #0396a4;
-    color: white;
-    width: 120px;
-    border: none;
-    font-size: 20px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    -webkit-appearance: button;
-    appearance: button;
-    outline: none;
- align-items: center;
- margin-left: 10px;
-}
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
