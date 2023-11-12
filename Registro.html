@@ -7,30 +7,29 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Registro </title>
 </head>
-<body class="d-flex justify-content-center align-items-center vh-200 " style="background-image: url(img/Fondologin.jpg);">
-
+<body class="align-items-center vh-100 " style="background-image: url(img/Fondologin.jpg);">
     <div class="container mt-lg-5">
         <div class="row justify-content-center" >
             <div class="col-md-8 form-container"style="background: white; height: 100%;">
                 <div class="form-title"> <h1>Registro</h1></div>
                 <form action="">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
+                    <div class="form-row justify-content-center" >
+                        <div class="form-group col-md-5">
                             <label for="">Nombre</label>
                             <input type="text" class="form-control" style="border-color: #17A2B8;">
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Apellido Paterno</label>
                             <input type="text" class="form-control" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Apellido Materno</label>
                             <input type="text" class="form-control" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="Genero">Genero</label>
                             <select class="form-control" id="Genero" name="Genero" required>    
                                 <option value="" disabled selected>Selecciona una opción</option>
@@ -40,63 +39,63 @@
                             </select>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Telefono</label>
                             <input type="text" class="form-control" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">calle</label>
                             <input type="text" class="form-control" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Numero interior</label>
                             <input type="number" class="form-control" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Numero exterior</label>
                             <input type="number" class="form-control" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Codigo postal</label>
                             <input type="number" class="form-control" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Experiencia laboral</label>
                             <textarea name="" id="Experiencia" cols="30" rows="10"></textarea>  
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Ultimo grado de estudios</label>
                             <input type="text" class="form-control" id="Educacion" required>
                         </div>
 
-                          <div class="form-group col-md-6">
+                          <div class="form-group col-md-5">
                             <label for="">Habilidades</label>
                             <textarea name="" id="Habilidades" cols="30" rows="10"></textarea>                      
                           </div>
 
-                          <div class="form-group col-md-6">
+                          <div class="form-group col-md-5">
                             <label for="">Fecha de nacimiento</label>
                            <input type="date" name="" id="FechaNac">
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Curriculum</label>
                            <input type="file" name="" id="Curriculum">
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Constancia</label>
                            <input type="file" name="" id="Constancia">
                         </div>
                         <!-- Agrega otras secciones del formulario aquí -->
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Disponibilidad</label>
                             <select class="form-control" id="Disponibilidad" name="Disponibilidad" required>    
                                 <option value="" disabled selected>Selecciona una opción</option>
@@ -105,22 +104,22 @@
                             </select>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Salario deseado</label>
                             <input type="number" class="form-control" name="salario" id="Salario" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">IdUsuario</label>
                             <input type="number" class="form-control" id="IdUsuario" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Correo</label>
                             <input type="email" class="form-control" id="correo" required>
                         </div>
 
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="">Contraseña</label>
                             <input type="password" class="form-control" id="contrasena" required>
                             <button class="btn btn-outline-info" type="button" onclick="togglePasswordVisibility()"

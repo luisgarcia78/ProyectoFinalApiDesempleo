@@ -1,15 +1,22 @@
 body {
     margin: 0;
- 
+    overflow:hidden ;
  background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
-height: 100vh;
 position: absolute;
 top: 0;
 left: 0;
 z-index: -1;
 }
+.form-container {
+    background: white;
+    max-height: 100vh; /* Altura máxima del contenedor blanco */
+    overflow-y: auto; /* Agregar scroll vertical si es necesario */
+    padding: 60px; /* Añadir un espacio interior para mejorar la apariencia */
+    margin-bottom: 30px;
+}
+
 :root{
   --colorPrimario: #17A2B8;  
 }
