@@ -7,37 +7,67 @@
     <link rel="stylesheet" href="/style/style.css">
     <title>Document</title>
 </head>
-<body>
-    <form action="">
-        <div>
-            <label for="">Nombre</label>
-            <input type="text">
+<body class="d-flex justify-content-center align-items-center vh-100 "style="  background-image: url('/assets/Fondologin.jpg');">
 
-            <label for="">Apellido Paterno</label>
-            <input type="text" required>
-            
-            <label for="">Apellido Materno</label>
-            <input type="text"required>
+    <div class="container mt-lg-5">
+        <div class="row justify-content-center" >
+            <div class="col-md-8 form-container"style="background: white;">
+                <div class="form-title">Registro</div>
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="">Nombre</label>
+                            <input type="text" class="form-control" style="border-color: #17A2B8;">
+                        </div>
 
-            <label for="">Genero</label>
-            <select name="Genero" id="" required>
-                <option value="">Selecciona</option>
-                <option value="M">Masculino</option>
-                <option value="F">Femenino</option>
-                <option value="Nobin">No binario</option>
+                        <div class="form-group col-md-6">
+                            <label for="">Apellido Paterno</label>
+                            <input type="text" class="form-control" required>
+                        </div>
 
-            </select>
+                        <div class="form-group col-md-6">
+                            <label for="">Apellido Materno</label>
+                            <input type="text" class="form-control" required>
+                        </div>
 
-            <label for="">Nombre</label>
-            <input type="text" required>
+                        <div class="form-group col-md-6">
+                            <label for="Genero">Genero</label>
+                            <select class="form-control" id="Genero" name="Genero" required>    
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                                <option value="Nobin">No binario</option>
+                            </select>
+                        </div>
 
-            <label for="">Nombre</label>
-            <input type="text" required>
+                        <!-- Agrega otras secciones del formulario aquí -->
 
-            <label for="">Nombre</label>
-            <input type="text" required>
+                        <div class="form-group col-md-6">
+                            <label for="">Disponibilidad</label>
+                            <select class="form-control" id="Disponibilidad" name="Disponibilidad" required>    
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="M">Medio turno</option>
+                                <option value="F">Turno completo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">Salario deseado</label>
+                            <input type="number" class="form-control" name="salario" id="Salario" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">IdUsuario</label>
+                            <input type="number" class="form-control" id="IdUsuario" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style=" background:  #17A2B8;">Enviar</button>
+                </form>
+            </div>
         </div>
-        <button type="submit">Enviar</button>
-    </form>
+    </div>
+</div>
+    <!-- Coloca otros elementos fuera del formulario aquí -->
+
 </body>
 </html>

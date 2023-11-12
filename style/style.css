@@ -1,7 +1,9 @@
 body {
     margin: 0;
 }
-
+:root{
+  --colorPrimario: #17A2B8;  
+}
 .login-container {
     margin-top: 3rem;
     position: relative;
@@ -47,7 +49,7 @@ select {
     appearance: none;
     outline: 0;
     box-shadow: none;
-    border: 1px solid  #09dbdb; /* Agrega el color de borde deseado */
+    border: 1px solid  var(--colorPrimario); /* Agrega el color de borde deseado */
     background: #5c6664;
     background-image: none;
     flex: 1;
@@ -80,7 +82,7 @@ select::-ms-expand {
     top: 0;
     right: 0;
     padding: 0 1em;
-    background: #0ab9b9;
+    background: var(--colorPrimario);
     cursor: pointer;
     pointer-events: none;
     transition: .25s all ease;
@@ -88,10 +90,24 @@ select::-ms-expand {
 
 .select:hover::after {
     color: #000000;
-    border: 2px solid #09dbdb; /* Reemplaza 'YourDesiredColor' con el color que desees */
+    border: 2px solid var(--colorPrimario); /* Reemplaza 'YourDesiredColor' con el color que desees */
 }
 
 option{
     border-radius: 5px;
     font-size: 18px;
+}
+
+/*Css form*/
+.form-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
