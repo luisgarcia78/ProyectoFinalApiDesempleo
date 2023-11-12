@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Registro </title>
 </head>
-<body class="d-flex justify-content-center align-items-center vh-100 "style="  background-image: url('/assets/Fondologin.jpg');">
+<body class="d-flex justify-content-center align-items-center vh-100 " style="background-image: url(img/Fondologin.jpg);">
 
     <div class="container mt-lg-5">
         <div class="row justify-content-center" >
             <div class="col-md-8 form-container"style="background: white;">
-                <div class="form-title">Registro</div>
+                <div class="form-title"> <h1>Registro</h1></div>
                 <form action="">
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -33,10 +33,10 @@
                         <div class="form-group col-md-6">
                             <label for="Genero">Genero</label>
                             <select class="form-control" id="Genero" name="Genero" required>    
-                                <option value="" disabled selected>Selecciona</option>
+                                <option value="" disabled selected>Selecciona una opción</option>
                                 <option value="M">Masculino</option>
                                 <option value="F">Femenino</option>
-                                <option value="Nobin">No binario</option>
+                                <option value="X">No binario</option>
                             </select>
                         </div>
 
@@ -45,7 +45,7 @@
                         <div class="form-group col-md-6">
                             <label for="">Disponibilidad</label>
                             <select class="form-control" id="Disponibilidad" name="Disponibilidad" required>    
-                                <option value="" disabled selected>Selecciona</option>
+                                <option value="" disabled selected>Selecciona una opción</option>
                                 <option value="M">Medio turno</option>
                                 <option value="F">Turno completo</option>
                             </select>
@@ -59,6 +59,16 @@
                         <div class="form-group col-md-6">
                             <label for="">IdUsuario</label>
                             <input type="number" class="form-control" id="IdUsuario" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">Correo</label>
+                            <input type="email" class="form-control" id="correo" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">Contraseña</label>
+                            <input type="password" class="form-control" id="pass" required>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary" style=" background:  #17A2B8;">Enviar</button>
