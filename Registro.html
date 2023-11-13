@@ -16,22 +16,22 @@
                     <div class="form-row justify-content-center" >
                         <div class="form-group col-md-5">
                             <label for="">Nombre</label>
-                            <input type="text" class="form-control" style="border-color: #17A2B8;">
+                            <input type="text" class="form-control" id="nombre"  >
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Apellido Paterno</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" required id="apellidopaterno">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Apellido Materno</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" required id="apellidomaterno">
                         </div>
-
+                        
                         <div class="form-group col-md-5">
                             <label for="Genero">Genero</label>
-                            <select class="form-control" id="Genero" name="Genero" required>    
+                            <select class="form-control" id="genero" name="Genero" required>    
                                 <option value="" disabled selected>Selecciona una opción</option>
                                 <option value="M">Masculino</option>
                                 <option value="F">Femenino</option>
@@ -41,63 +41,63 @@
 
                         <div class="form-group col-md-5">
                             <label for="">Telefono</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" required id="telefono">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">calle</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" required id="calle">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Numero interior</label>
-                            <input type="number" class="form-control" required>
+                            <input type="number" class="form-control" required id="numint">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Numero exterior</label>
-                            <input type="number" class="form-control" required>
+                            <input type="number" class="form-control" required id="numext">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Codigo postal</label>
-                            <input type="number" class="form-control" required>
+                            <input type="number" class="form-control" required id="codigopostal">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Experiencia laboral</label>
-                            <textarea name="" id="Experiencia" cols="30" rows="10"></textarea>  
+                            <textarea name="" id="experiencialaboral" cols="30" rows="10"></textarea>  
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Ultimo grado de estudios</label>
-                            <input type="text" class="form-control" id="Educacion" required>
+                            <input type="text" class="form-control" id="educacion" required>
                         </div>
 
                           <div class="form-group col-md-5">
                             <label for="">Habilidades</label>
-                            <textarea name="" id="Habilidades" cols="30" rows="10"></textarea>                      
+                            <textarea name="" id="habilidades" cols="30" rows="10"></textarea>                      
                           </div>
 
                           <div class="form-group col-md-5">
                             <label for="">Fecha de nacimiento</label>
-                           <input type="date" name="" id="FechaNac">
+                           <input type="date" name="" id="fechanacimiento">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Curriculum</label>
-                           <input type="file" name="" id="Curriculum">
+                           <input type="file" name="" id="Curriculumvitae">
                         </div>
 
                         <div class="form-group col-md-5">
                             <label for="">Constancia</label>
-                           <input type="file" name="" id="Constancia">
+                           <input type="file" name="" id="constancia">
                         </div>
                         <!-- Agrega otras secciones del formulario aquí -->
 
                         <div class="form-group col-md-5">
                             <label for="">Disponibilidad</label>
-                            <select class="form-control" id="Disponibilidad" name="Disponibilidad" required>    
+                            <select class="form-control" id="disponibilidad" name="Disponibilidad" required>    
                                 <option value="" disabled selected>Selecciona una opción</option>
                                 <option value="M">Medio turno</option>
                                 <option value="F">Turno completo</option>
@@ -106,12 +106,7 @@
 
                         <div class="form-group col-md-5">
                             <label for="">Salario deseado</label>
-                            <input type="number" class="form-control" name="salario" id="Salario" required>
-                        </div>
-
-                        <div class="form-group col-md-5">
-                            <label for="">IdUsuario</label>
-                            <input type="number" class="form-control" id="IdUsuario" required>
+                            <input type="number" class="form-control" name="salario" id="salario" required>
                         </div>
 
                         <div class="form-group col-md-5">
@@ -121,9 +116,12 @@
 
                         <div class="form-group col-md-5">
                             <label for="">Contraseña</label>
-                            <input type="password" class="form-control" id="contrasena" required>
-                            <button class="btn btn-outline-info" type="button" onclick="togglePasswordVisibility()"
-                            style="  font-size: 20px;">Mostrar</button>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="contrasena" required>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-info" type="button" onclick="togglePasswordVisibility()" style="font-size: 20px;">Mostrar</button>
+                                </div>
+                            </div>
                         </div>
                        
                     </div>

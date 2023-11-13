@@ -114,3 +114,13 @@ option{
     font-size: 24px;
     margin-bottom: 20px;
 }
+/*accediendo a el div dentro del formulario*/
+.form-row.justify-content-center input{
+    border-color: #17A2B8;
+    border-radius: 6px;
+}
+
+.form-row.justify-content-center textarea{
+    width: 300px;
+    height: 40px;
+}
