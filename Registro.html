@@ -12,7 +12,7 @@
         <div class="row justify-content-center" >
             <div class="col-md-8 form-container"style="background: white; height: 100%;">
                 <div class="form-title"> <h1>Registro</h1></div><br>
-                <form action="">
+                <form id="registroForm" onsubmit="submitForm(event)"> 
                     <div class="form-row justify-content-center" >
                         <div class="form-group col-md-5">
                             <label for="">Nombre</label>
@@ -47,6 +47,11 @@
                         <div class="form-group col-md-5">
                             <label for="">calle</label>
                             <input type="text" class="form-control" required id="calle">
+                        </div>
+
+                        <div class="form-group col-md-5">
+                            <label for="">colonia</label>
+                            <input type="text" class="form-control" required id="colonia">
                         </div>
 
                         <div class="form-group col-md-5">
@@ -122,7 +127,6 @@
                                     <button class="btn btn-outline-info" type="button" onclick="togglePasswordVisibility()" style="font-size: 20px;">Mostrar</button>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -135,5 +139,6 @@
 </div>
     <!-- Coloca otros elementos fuera del formulario aquí -->
     <script src="js/login-script.js"></script>
+    <script src="js/registro-script.js"></script>
 </body>
 </html>
