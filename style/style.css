@@ -134,4 +134,44 @@ option{
 }
 
 
+/*estilos de comentarios.html*/
+
+#motivos {
+    resize: horizontal;
+}
+
+/* Ocultar los radios */
+.form-check-input {
+    position: absolute;
+    left: -9999px;
+    cursor: pointer;
+    
+  
+
+}
+
+/* Estilo para las etiquetas de los radios (seleccionar mediante clic en la imagen) */
+.form-check-label {
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.form-check input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.form-check-label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Agrega un estilo visual para resaltar la selección */
+.form-check-input:checked + .form-check-label {
+    background-color: #e0e0e0; /* Cambia esto según tus preferencias */
+    border-radius: 5px;
+    padding: 5px;
+}
+
 /**/
