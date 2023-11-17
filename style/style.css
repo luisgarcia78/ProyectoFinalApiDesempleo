@@ -136,42 +136,64 @@ option{
 
 /*estilos de comentarios.html*/
 
-#motivos {
-    resize: horizontal;
+
+.custom-form-group {
+    margin-bottom: 15px;
 }
 
-/* Ocultar los radios */
-.form-check-input {
-    position: absolute;
-    left: -9999px;
-    cursor: pointer;
-    
-  
-
-}
-
-/* Estilo para las etiquetas de los radios (seleccionar mediante clic en la imagen) */
-.form-check-label {
+.custom-radio {
     display: inline-block;
+    margin-right: 10px;
+}
+
+.custom-emoji {
+    vertical-align: middle;
+}
+
+.custom-form-group img {
+    height: 100px;
     cursor: pointer;
+    border-width: 2px;
+}
+
+.custom-form-group input[type="radio"] {
+    display: none;
     
 }
-
-.form-check input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+/*select para mantener el color dentro de comentarios*/
+.selected {
+    background: rgba(46, 140, 255, 0.431);
+    border-radius: 60px;
+    border: 2px solid transparent;
 }
-.form-check-label {
-    display: inline-block;
+
+.custom-form-group img {
+    height: 100px;
     cursor: pointer;
 }
 
-/* Agrega un estilo visual para resaltar la selección */
-.form-check-input:checked + .form-check-label {
-    background-color: #e0e0e0; /* Cambia esto según tus preferencias */
-    border-radius: 5px;
-    padding: 5px;
+.custom-form-group img:hover {
+    background: rgba(0, 157, 255, 0.723);
+    border-radius: 60px;
+    border: 2px solid transparent;
 }
-
+.custom-form-group textarea {
+border-color: #17a3b860;
+border-radius: 6px;
+}
 /**/
+
+/*footer */
+footer {
+ 
+    bottom: 0;
+    padding: 20px 0px;
+    border-top: 1px solid grey;
+    width: 100%;
+    text-align: center;
+    color: rgb(246, 246, 246);
+    background: rgba(0, 0, 0, 0.509);
+    position: fixed;
+  
+  
+  }

@@ -1,11 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
-    twemoji.parse(document.body, {
-        folder: 'svg',
-        ext: '.svg',
-    });
+  // Obtén todas las imágenes en el grupo
+  var images = document.querySelectorAll('.custom-form-group img');
+    
+  // Agrega un evento de clic a cada imagen
+  images.forEach(function (img) {
+      img.addEventListener('click', function () {
+          // Quita la clase 'selected' de todas las imágenes
+          images.forEach(function (otherImg) {
+              otherImg.classList.remove('selected');
+          });
 
-    // Definir emojis para cada opción
-    document.getElementById('emojiB').innerHTML = twemoji.parse('😊');
-    document.getElementById('emojiR').innerHTML = twemoji.parse('😐');
-    document.getElementById('emojiM').innerHTML = twemoji.parse('☹');
-});
+          // Agrega la clase 'selected' solo a la imagen clicada
+          img.classList.add('selected');
+      });
+  });
